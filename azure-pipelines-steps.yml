@@ -1,0 +1,8 @@
+steps:
+- bash: |
+    which tar
+    tar --version
+  displayName: Show tar (from bash shell)
+
+- script: tar --force-local -cf $(TEMP)/archive.tar -C $(Build.SourcesDirectory) .
+  displayName: Run tar
