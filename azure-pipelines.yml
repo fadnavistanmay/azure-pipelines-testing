@@ -17,7 +17,7 @@ jobs:
   steps:
     - template: azure-pipelines-steps.yml
  
- - job: Hosted Windows Container
+- job: Hosted Windows Container
   pool:
     vmImage: win1803
   steps:
