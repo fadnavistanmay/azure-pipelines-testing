@@ -1,17 +1,17 @@
 jobs:
-- job: VS2015-Hosted
+- job: VS2015Hosted
   pool:
     vmImage: vs2015-win2012r2
   steps:
     - template: azure-pipelines-steps.yml
 
-- job: VS2017-Hosted2017
+- job: VS2017Hosted2017
   pool:
     vmImage: vs2017-win2016
   steps:
     - template: azure-pipelines-steps.yml
 
-- job: VS2019-Hosted2019
+- job: VS2019Hosted2019
   pool:
     vmImage: windows-2019
   steps:
@@ -23,19 +23,19 @@ jobs:
   steps:
     - template: azure-pipelines-steps.yml
 
-- job: linux-Ubuntu
+- job: linuxUbuntu
   pool:
     vmImage: ubuntu-16.04
   steps:
     - template: azure-pipelines-steps.yml
 
-- job: macOS-Mojave-1014
+- job: macOSMojave1014
   pool:
     vmImage: macos-10.14
   steps:
     - template: azure-pipelines-steps.yml
 
-- job: macOS-Mojave-1013
+- job: macOSMojave1013
   pool:
     vmImage: macos-10.13
   steps:
